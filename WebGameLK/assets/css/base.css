@@ -1,0 +1,68 @@
+:root {
+    --main-color: #b42b6f;
+    --text-color: #030303;
+    --border-color: #d3d3d3;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid {
+    display: block;
+    width: 100%;
+    padding: 0px;
+}
+.wide {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__col-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100%/12)*2);
+}
+.grid__col-2in10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100%/10)*2);
+}
+.grid__col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100%/12)*10);
+}
+/* Animation */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes Growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>LK Game</Title>
+        <meta charset="UTF-8">
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="shortcut icon" href="./assets/images/icon.ico">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="grid wide">
+                <section class="header__banner">
+                    <div class="header__banner-logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header__banner-search">
+                        <div class="header__banner-search-input">
+                            <input type="text" placeholder="Nhập tên game cần tìm">
+                            <div class="history">
+                                <header class="history__header">
+                                    <h2 class="history__header-heading">Lịch sử tìm kiếm</h2>
+                                </header>
+                                <div class="history__container">
+                                    <ul class="history__list">
+                                        <li class="history__item">Contra</li>
+                                        <li class="history__item">Fifa online</li>
+                                        <li class="history__item">Khu vườn trên mây</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header__banner-notify">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="notify">
+                            <header class="notify__header">
+                                <h2 class="notify__header-heading">Thông báo mới</h2>
+                            </header>
+                            <div class="notify__container">
+                                <ul class="notify__list">
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/notify-item-1.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">Liên Minh Huyền Thoại</h3>
+                                                <p class="notify__item-describe">Ra mắt tướng mới Nilah, Hiện Thân Của Niềm Vui từ 15.07.2022</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/notify-item-2.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">FIFA Online 4</h3>
+                                                <p class="notify__item-describe">Bảo trì máy chủ: Đón chào siêu cập nhật 07.07.2022</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/notify-item-3.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">PUBG</h3>
+                                                <p class="notify__item-describe">Giải đấu PUBG National Cup trở lại vào tháng 11.2022.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/megaman.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">Rock Man</h3>
+                                                <p class="notify__item-describe">Cập nhật giao diện nhân vật mới</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__banner-user">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <a class="login" href="#">Đăng nhập</a>
+                        <span class="separate"></span>
+                        <a class="register" href="#">Đăng ký</a>
+                    </div>
+                </section>
+                <nav class="header__navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME MỚI NHẤT</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME ĐỘC QUYỀN</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME MIỄN PHÍ</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/topgame.html" class="navbar__item-link">GAME CHƠI NHIỀU</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME ĐÁNH GIÁ CAO</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME CỦA TÔI</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                    </ul>            
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2 m-0 c-0">
+                        <section class="container__category">
+                            <h2 class="category__heading">
+                                <i class="fa-solid fa-bars"></i>
+                                Danh Mục Game</h2>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Trẻ Em
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Con Gái
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Âm Nhạc
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Trí Tuệ
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Chiến Thuật
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Phiêu Lưu
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="/action_games.html" class="category__item-link">
+                                        Hành Động
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Bắn Súng
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        Kinh Dị
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col l-10 m-12 c-12">
+                        <section class="container__game-menu">
+                            <div class="row">
+                                <!-- row-1 -->
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">                                    
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/blockycars.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>                             
+                                            <h3 class="game-menu-item__name">Blocky Cars</h3>                                       
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/stupidzombies.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Stupid Zombies</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/templerun2.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Temple Run 2</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/fisheatfish.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Fish Eat Fish</h3>                                   
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/tunnelrush2.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Tunnel Rush 2</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- row-2 -->
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/rockman.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Rock Man</h3>                                       
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/idleants.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Idle Ants</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/contra.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Contra</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/masterchess.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Master Chess</h3>                                   
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/jetpackjoyride.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Jetpack Joyride</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- row-3 -->
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/slopey.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Slopey</h3>                                       
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/spacething.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Space Thing</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/stickmanclimb2.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Stickman Climb 2</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/bubleshooter.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Buble Shooter</h3>                                   
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/unoonline.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Uno Online</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- row-4 -->
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/doctorteeth2.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Doctor Teeth 2</h3>                                       
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/growupthecats.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Grow Up The Cats</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/thewalkingmerge.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">The Walking Merge</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/funnyhaircut.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Funny Haircut</h3>                                   
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/soccerskillschampionsleague.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Champions League</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- row-5 -->
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/boxrob.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Boxrob</h3>                                       
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/anycolor.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Anycolor</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/clashoftanks.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Clash Of Tanks</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/footballlegends.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Football Legends</h3>                                   
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-10-2 m-3 c-12">
+                                    <div class="game-menu-item">
+                                        <a href="/gameplay.html" class="game-menu-item__link">
+                                            <div class="game-menu-item__img" style="background-image: url(./assets/images/dadish3.png);">
+                                                <div class="game-menu-item__overlay"></div>
+                                            </div>
+                                            <div class="game-menu-item__rating">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>  
+                                            <h3 class="game-menu-item__name">Dadish 3</h3>
+                                        </a>
+                                        <div class="game-menu-item__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer__container">
+                    <div class="row">
+                        <div class="col l-4">
+                            <ul class="footer__list">
+                                <h3 class="footer__list-heading">Liên hệ</h3>
+                                <li class="footer__item">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Lầu 5, tòa LK, 689/26 Nguyễn Kiệm, phường 3, Gò Vấp, Tp.HCM.
+                                </li>
+                                <li class="footer__item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    0374987790 - 0979829528
+                                </li>
+                                <li class="footer__item">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    lkgame@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4">
+                            <ul class="footer__list">
+                                <h3 class="footer__list-heading">Về chúng tôi</h3>
+                                <li class="footer__item"><a href="#">Giới thiệu</a></li>
+                                <li class="footer__item"><a href="#">Điều khoản</a></li>
+                                <li class="footer__item"><a href="#">Bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l-4">
+                            <ul class="footer__list">
+                                <h3 class="footer__list-heading">Theo dõi</h3>
+                                <li class="footer__item">
+                                    <a class="footer__contact" href="#">
+                                        <i class="icon-fb fa-brands fa-facebook"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__contact" href="#">
+                                        <i class="icon-yt fa-brands fa-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12">          
+                        <div class="footer__copyright">
+                            <span>
+                                LKGame <i class="fa-regular fa-copyright"></i>2022 Công ty Cổ phần Mạng trực tuyến Long Khải.
+                                <br>Giấy phép cung cấp dịch vụ trò chơi điện tử trên mạng số 107/GCN-PTTH&TTĐT.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="backToTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <form class="auth-form form-register" action="">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__info">
+                            <input class="auth-form__input input-phone" type="text" placeholder="Số điện thoại">
+                            <input class="auth-form__input input-pass" type="password" placeholder="Mật khẩu">
+                            <input class="auth-form__input input-pass" type="password" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="auth-form__notice">
+                            <p>Bằng việc đăng ký, bạn đã đồng ý với LK Game về<br/><a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a></p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="auth-form__btn btn-back">TRỞ LẠI</button>
+                            <button class="auth-form__btn btn-primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials"> 
+                        <button class="auth-form__btn btn-fb">
+                                <i class="icon icon--standtogether fa-brands fa-facebook-square"></i>
+                                Kết nối với Facebook
+                            </a>
+                        </button>
+                        <button class="auth-form__btn btn-gg">
+                                <i class="icon icon--standtogether fa-brands fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </button>
+                    </div>
+                </form>
+                <form class="auth-form form-login" action="">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__info">
+                            <input class="auth-form__input input-phone" type="text" placeholder="Số điện thoại">
+                            <input class="auth-form__input input-pass" type="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="auth-form__help">
+                            <a href="#">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="#">Cần trợ giúp?</a>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="auth-form__btn btn-back">TRỞ LẠI</button>
+                            <button class="auth-form__btn btn-primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials"> 
+                        <button class="auth-form__btn btn-fb">
+                                <i class="icon icon--standtogether fa-brands fa-facebook-square"></i>
+                                Kết nối với Facebook
+                            </a>
+                        </button>
+                        <button class="auth-form__btn btn-gg">
+                                <i class="icon icon--standtogether fa-brands fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+    <script src="/assets/js/main.js"></script>
+</html>

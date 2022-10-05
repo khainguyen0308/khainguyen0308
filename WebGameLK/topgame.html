@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>Game Chơi Nhiều</Title>
+        <meta charset="UTF-8">
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="shortcut icon" href="./assets/images/icon.ico">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="grid wide">
+                <section class="header__banner">
+                    <div class="header__banner-logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header__banner-search">
+                        <div class="header__banner-search-input">
+                            <input type="text" placeholder="Nhập tên game cần tìm">
+                            <div class="history">
+                                <header class="history__header">
+                                    <h2 class="history__header-heading">Lịch sử tìm kiếm</h2>
+                                </header>
+                                <div class="history__container">
+                                    <ul class="history__list">
+                                        <li class="history__item">Contra</li>
+                                        <li class="history__item">Fifa online</li>
+                                        <li class="history__item">Khu vườn trên mây</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header__banner-notify">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="notify">
+                            <header class="notify__header">
+                                <h2 class="notify__header-heading">Thông báo mới</h2>
+                            </header>
+                            <div class="notify__container">
+                                <ul class="notify__list">
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/notify-item-1.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">Liên Minh Huyền Thoại</h3>
+                                                <p class="notify__item-describe">Ra mắt tướng mới Nilah, Hiện Thân Của Niềm Vui từ 15.07.2022</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/notify-item-2.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">FIFA Online 4</h3>
+                                                <p class="notify__item-describe">Bảo trì máy chủ: Đón chào siêu cập nhật 07.07.2022</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/notify-item-3.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">PUBG</h3>
+                                                <p class="notify__item-describe">Giải đấu PUBG National Cup trở lại vào tháng 11.2022.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__item">
+                                        <a href="#" class="notify__item-link">
+                                            <img src="./assets/images/megaman.png" alt="">
+                                            <div class="notify__item-info">
+                                                <h3 class="notify__item-heading">Rock Man</h3>
+                                                <p class="notify__item-describe">Cập nhật giao diện nhân vật mới</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__banner-user">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <a class="login" href="#">Đăng nhập</a>
+                        <span class="separate"></span>
+                        <a class="register" href="#">Đăng ký</a>
+                    </div>
+                </section>
+                <nav class="header__navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME MỚI NHẤT</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME ĐỘC QUYỀN</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME MIỄN PHÍ</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/topgame.html" class="navbar__item-link">GAME CHƠI NHIỀU</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME ĐÁNH GIÁ CAO</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">GAME CỦA TÔI</a>
+                            <span class="navbar__item-line"></span>
+                        </li>
+                    </ul>            
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="banner">
+                <h2>Top Game Chơi Nhiều</h2>
+            </section>
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-10 l-o-1">
+                        <section class="top-game__menu">
+                            <h2 class="top-game__heading">Top Game Được Chơi Nhiều Tháng 8</h2>
+                            <ul class="top-game__list">
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank" style="background-color: gold;">
+                                            <h3>1</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/blockycars.png" alt="">
+                                                <p>Blocky Cars</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="0">
+                                                <p class="count">22.473</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank" style="background-color: silver;">
+                                            <h3>2</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/stupidzombies.png" alt="">
+                                                <p>Stupid Zombies</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="1">
+                                                <p class="count">7.172</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank" style="background-color: peru">
+                                            <h3>3</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/rockman.png" alt="">
+                                                <p>Rock Man</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="2">
+                                                <p class="count">5.260</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>4</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/contra.png" alt="">
+                                                <p>Contra</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="3">
+                                                <p class="count">3.347</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>5</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/slopey.png" alt="">
+                                                <p>Slopey</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="4">
+                                                <p class="count">2.869</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>6</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/doctorteeth2.png" alt="">
+                                                <p>Doctor Teeth 2</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="5">
+                                                <p class="count">2.391</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>7</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/thewalkingmerge.png" alt="">
+                                                <p>The Walking Merge</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="6">
+                                                <p class="count">1.434</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>8</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/soccerskillschampionsleague.png" alt="">
+                                                <p>Champions League</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="7">
+                                                <p class="count">1.434</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>9</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/clashoftanks.png" alt="">
+                                                <p>Clash Of Tanks</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="8">
+                                                <p class="count">956</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="top-game__item">
+                                    <a href="/gameplay.html" class="top-game__item-link">
+                                        <div class="top-game__rank">
+                                            <h3>10</h3>
+                                        </div>
+                                        <div class="top-game__item-container">
+                                            <div class="top-game__item-body">
+                                                <img src="/assets/images/footballlegends.png" alt="">
+                                                <p>Football Legends</p>
+                                            </div>
+                                            <div class="top-game__item-percent" data-index="9">
+                                                <p class="count">478</p>
+                                                <div class="percent-child"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer__container">
+                    <div class="row">
+                        <div class="col l-4">
+                            <ul class="footer__list">
+                                <h3 class="footer__list-heading">Liên hệ</h3>
+                                <li class="footer__item">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Lầu 5, tòa LK, 689/26 Nguyễn Kiệm, phường 3, Gò Vấp, Tp.HCM.
+                                </li>
+                                <li class="footer__item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    0374987790 - 0979829528
+                                </li>
+                                <li class="footer__item">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    lkgame@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4">
+                            <ul class="footer__list">
+                                <h3 class="footer__list-heading">Về chúng tôi</h3>
+                                <li class="footer__item"><a href="#">Giới thiệu</a></li>
+                                <li class="footer__item"><a href="#">Điều khoản</a></li>
+                                <li class="footer__item"><a href="#">Bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l-4">
+                            <ul class="footer__list">
+                                <h3 class="footer__list-heading">Theo dõi</h3>
+                                <li class="footer__item">
+                                    <a class="footer__contact" href="#">
+                                        <i class="icon-fb fa-brands fa-facebook"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__contact" href="#">
+                                        <i class="icon-yt fa-brands fa-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12">          
+                        <div class="footer__copyright">
+                            <span>
+                                LKGame <i class="fa-regular fa-copyright"></i>2022 Công ty Cổ phần Mạng trực tuyến Long Khải.
+                                <br>Giấy phép cung cấp dịch vụ trò chơi điện tử trên mạng số 107/GCN-PTTH&TTĐT.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="backToTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <form class="auth-form form-register" action="">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__info">
+                            <input class="auth-form__input input-phone" type="text" placeholder="Số điện thoại">
+                            <input class="auth-form__input input-pass" type="password" placeholder="Mật khẩu">
+                            <input class="auth-form__input input-pass" type="password" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="auth-form__notice">
+                            <p>Bằng việc đăng ký, bạn đã đồng ý với LK Game về<br/><a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a></p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="auth-form__btn btn-back">TRỞ LẠI</button>
+                            <button class="auth-form__btn btn-primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials"> 
+                        <button class="auth-form__btn btn-fb">
+                                <i class="icon icon--standtogether fa-brands fa-facebook-square"></i>
+                                Kết nối với Facebook
+                            </a>
+                        </button>
+                        <button class="auth-form__btn btn-gg">
+                                <i class="icon icon--standtogether fa-brands fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </button>
+                    </div>
+                </form>
+                <form class="auth-form form-login" action="">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__info">
+                            <input class="auth-form__input input-phone" type="text" placeholder="Số điện thoại">
+                            <input class="auth-form__input input-pass" type="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="auth-form__help">
+                            <a href="#">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="#">Cần trợ giúp?</a>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="auth-form__btn btn-back">TRỞ LẠI</button>
+                            <button class="auth-form__btn btn-primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials"> 
+                        <button class="auth-form__btn btn-fb">
+                                <i class="icon icon--standtogether fa-brands fa-facebook-square"></i>
+                                Kết nối với Facebook
+                            </a>
+                        </button>
+                        <button class="auth-form__btn btn-gg">
+                                <i class="icon icon--standtogether fa-brands fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/topgame.js"></script>
+    </body>
